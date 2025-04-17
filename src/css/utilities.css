@@ -1,0 +1,65 @@
+.w-full {
+  width: 100%;
+}
+.w-30 {
+  width: 30%;
+}
+.h-full {
+  height: 100%;
+}
+.h-180 {
+  height: 180px;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.center-items {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.green-1 {
+  color: #189651;
+}
+.green-2 {
+  color: #06c069;
+}
+
+.txt-upper {
+  text-transform: uppercase;
+}
+.font-bold {
+  font-weight: bold;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-50 {
+  font-size: 50px;
+}
+.p-16 {
+  padding: 16px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.rounded-20 {
+  border-radius: 20px;
+}
+
+.page-width {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 16px;
+}

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FaCartShopping, FaStore } from "react-icons/fa6";
-import { useCart } from "./CartContext";
+import { useCart } from "../context/CartContext";
 
 const Navigation = () => {
   const { totalItems } = useCart();

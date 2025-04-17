@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useCart } from "./CartContext";
+import { useCart } from "../context/CartContext";
 import { FaTrashCan } from "react-icons/fa6";
 
 const Cart = () => {

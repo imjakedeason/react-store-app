@@ -1,0 +1,29 @@
+@media (max-width: 1024px) {
+  .page-width {
+    max-width: 980px;
+  }
+  .product-card {
+    flex-basis: calc(33.333% - 13.33px);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-width {
+    max-width: 85%;
+    padding: 0 12px;
+  }
+  .product-card {
+    flex-basis: calc(50% - 10px);
+  }
+  .cart-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-card {
+    flex-basis: 100%;
+    max-width: 500px;
+    margin: 0 10px 20px 10px;
+  }
+}

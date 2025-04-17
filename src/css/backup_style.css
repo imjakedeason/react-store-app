@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif; /* Added quotes around font name */
+}
+
+/* Base Styles */
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+button {
+  cursor: pointer;
+  border: 0;
+}
+a {
+  color: #fff; /* linkovi u navigaciji */
+  text-decoration: none;
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Osnovno */
+.w-full {
+  width: 100%;
+}
+.w-30 {
+  width: 30%;
+}
+.h-full {
+  height: 100%;
+}
+.h-180 {
+  height: 180px;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.center-items {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.green-1 {
+  color: #189651;
+}
+.green-2 {
+  color: #06c069;
+}
+.txt-upper {
+  text-transform: uppercase;
+}
+.font-bold {
+  font-weight: bold;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-50 {
+  font-size: 50px;
+}
+.p-16 {
+  padding: 16px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.rounded-20 {
+  border-radius: 20px;
+}
+
+/* Layout za stranicu */
+.page-width {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Product Grid */
+.products-wrapper {
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px 0px;
+  padding: 12px 0;
+}
+.product-card {
+  background-color: #fff;
+  height: 380px;
+  margin: 12px 0;
+  flex: 0 0 calc(25% - 15px); /* Non-growing, non-shrinking */
+  transition: 0.3s all;
+  position: relative; /* Add this */
+  overflow: hidden; /* Add this */
+}
+.product-card:hover {
+  transform: scale(1.1);
+  z-index: 1; /* da bude ispred */
+}
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.shadow:hover {
+  box-shadow: 0 6px 100px rgba(0, 0, 0, 0.5);
+}
+
+/* Product Content */
+.title-1 {
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #0d1c31;
+  margin: 6px 0 0;
+}
+.title-2 {
+  color: #0d1c31;
+}
+.description-1 {
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #888888;
+  font-size: 12px;
+}
+.description-2 {
+  color: #0d1c31;
+  font-size: 16px;
+}
+.price-button {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.btn {
+  background-color: #fff;
+  border: 2px solid #0d1c31;
+  color: #0d1c31;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease; /* google */
+}
+.btn:hover {
+  background-color: #0d1c31;
+  color: #fff;
+}
+
+/* Košarica */
+.cart-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart-products {
+  padding: 20px;
+  color: #0d1c31;
+  border-bottom: 2px solid #0d1c31;
+  margin-top: 30px;
+}
+.cart-info {
+  margin-left: 60px;
+}
+.cart-summary {
+  padding: 20px;
+  color: #0d1c31;
+  margin: 60px 0;
+}
+
+.cart-product-remove {
+  background: #f1b4b4;
+  color: #d30000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  transition: 0.3s all;
+}
+.cart-product-remove:hover {
+  background: #d84242;
+  color: #ffffff;
+  text-align: center;
+}
+.empty-cart {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.empty-txt {
+  margin: 50px;
+}
+.cart-bttn {
+  background-color: #189651;
+  color: white;
+  border: 2px solid #189651;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  transition: 0.3s all;
+}
+.cart-bttn:hover {
+  background-color: #fff;
+  color: #189651;
+}
+
+/* Navigacija */
+.nav-wrapper {
+  background-color: #0d1c31;
+  color: white;
+}
+.nav {
+  height: 80px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-left {
+  align-items: center;
+  gap: 16px;
+}
+.logo {
+  color: #189651;
+  font-size: 38px;
+  font-stretch: extra-condensed;
+}
+.nav-right {
+  gap: 24px;
+  align-items: center;
+  font-size: 18px;
+}
+.cart-link {
+  position: relative; /* za badge na košarici*/
+}
+.menu:hover {
+  color: #189651;
+}
+.cart-link:hover {
+  color: #189651;
+}
+svg {
+  vertical-align: middle;
+}
+.cart-badge {
+  position: absolute; /* za badge na košarici */
+  top: -10px;
+  right: -12px;
+  background: #06c069;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .page-width {
+    max-width: 980px;
+  }
+  .product-card {
+    flex-basis: calc(33.333% - 13.33px); /* 3 columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .page-width {
+    max-width: 85%;
+    padding: 0 12px;
+  }
+  .product-card {
+    flex-basis: calc(50% - 10px); /* 2 columns */
+  }
+  .cart-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-card {
+    flex-basis: 100%; /* 1 column */
+    max-width: 500px;
+    margin: 0 10px 20px 10px; /* Centered on mobile */
+  }
+}

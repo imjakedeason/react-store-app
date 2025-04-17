@@ -1,0 +1,54 @@
+.nav-wrapper {
+  background-color: #0d1c31;
+  color: white;
+}
+
+.nav {
+  height: 80px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-left {
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  color: #189651;
+  font-size: 38px;
+  font-stretch: extra-condensed;
+}
+
+.nav-right {
+  gap: 24px;
+  align-items: center;
+  font-size: 18px;
+}
+
+.cart-link {
+  position: relative;
+}
+
+.menu:hover,
+.cart-link:hover {
+  color: #189651;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  background: #06c069;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
